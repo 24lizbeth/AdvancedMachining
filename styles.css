@@ -21,23 +21,23 @@ body {
 
 /*==Variables===*/
 :root{
---bg-color:none;
---footer-bg: #1a1a2e;
+--bg-color:#2e3a4e;
+--footer-bg: #061838;
 --footer-accnt: #bacef3;
 --footer-txt: #ffffff;
 --nav-bar-bg: #061838;
 --nav-bar-items: #ffffff;
 --nav-items-hover:#bacef3;
---logo-color: #bacef3;
+--logo-color: #e6eaf1;
 --service-card-bg: #7f8e91;
---cus-bg-color: #1a1a2e;
+--cus-bg-color: #061838;
 --cus-btn-bg: #9bc5d0;
 --primary-color:#364c6e;
 --webpage-bg-color: none;
 --secondary-color:#444043;
---hover-bg-color:#468af0;
+--hover-bg-color:#061838;
 --cta-bg: #bacef3;
---cta-text: #1a1a2e;
+--cta-text: #061838;
 --tag-line-font: #eaedecd4;
 --shadow-1: 0px 2px 10px rgba(0, 0, 0, 0.3);
 --shadow-2: 0px 2px 10px rgba(26, 112, 224, 0.4);
@@ -50,7 +50,7 @@ body {
 --link-hover: #93c2ee;
 --about-us-h1: #ffffff;
 --learn-more-btn-bg: #468af0;
---learn-more-btn-txt: #0e0e11;
+--learn-more-btn-txt: #061838;
 --hero-cta-bg: #0d0d0e;
 --hero-cta-txt: #030303;
 --sub-header-txt: #0e0f0fd4;
@@ -58,24 +58,24 @@ body {
 --service-card-a: #f5f5f5;
 --website-txt: #e8edec;
 --nav-accnt: #121111;
---card-title-txt: #bacef3;
---card-title-bg: #1a1a2e;
+--card-title-txt: #ffffff;
+--card-title-bg: #2e3a4e;
 --hero-text-bx-1: #1a1a2ee3;
 --hero-text-bx-2: #505068ee;
 --hero-text-bx-3: #505068ee;
---hero-text-bx-4: #1a1a2e;
+--hero-text-bx-4: #1a1a2ee3;
 --hero-img-container: none;
---Home-page-bg: #f3f3fa00;
+--Home-page-bg: #061838;
 --hero-span-bx1: #bacef3;
 --hero-span-bx2: #bacef3;
 --hero-span-bx3: #bacef3;
 --hero-span-bx4:  #bacef3;
---services-bg: #3b4758a8;
---hero-bg:#4b4d5056;
+--services-bg: #061838;
+--hero-bg:#061838;
 --services-li-a: #ffffff;
---about-us-bg: #1a1a2e;
---services-li-bg: #1a1a2e;
---about-us-hero-bg:#fffff;
+--about-us-bg: #061838;
+--services-li-bg: #061838;
+--about-us-hero-bg: #2e3a4e;
 --Haas-mini-table-th:#ffffff;
 --Haas-2-table-th: #ffffff;
 --Haas-3-table-th: #ffffff;
@@ -87,14 +87,17 @@ body {
 --about-us-text-h1:#0c0c0c;
 --gallery-arrow-btn-bg: #ffffff;
 --thumbnail-hover: #ffffff;
---gallery-main-bg: #494141;
---gallery-arrow-btn-bg-hover: 1a1a2e;
+--gallery-main-bg: #061838;
+--gallery-arrow-btn-bg-hover: #ffffff;
 --au-table-title: #ffffff;
 --service-btn: #1a1a2e;
---service-btn-txt: white;
---hero-text: white;
-
-
+--service-btn-txt:  #ffffff;
+--hero-text: #ffffff;
+--au-table-title: #ffffff;
+--service-card-content: #061838;
+--services-section: #061838;
+--services-section-title-bg: #061838;
+--services-banner-h1: #ffffff;
 }
 
 /*==Resuable CSS===*/
@@ -214,9 +217,10 @@ body{
 .hero-h1{
     display: grid;
     color: var(--hero-text);
-    font-size: 30px;
+    font-size: 40px;
     justify-content: center;
     font-weight: 500;
+    padding-bottom: 25px;
 
 
 }
@@ -276,6 +280,8 @@ body{
 }
 .services-banner h1{
     text-align: center;
+    color: var(--services-banner-h1);
+    font-size: 40px;
 }
 .services-section{
     justify-content: center;
@@ -297,6 +303,7 @@ body{
 }
 .services-card{
     display: inline-flex;
+    width: 100%;
 }
 .service-1{
    padding: 10%;
@@ -350,11 +357,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .au-table-title h3{
-    color: red; 
+    color: var(--au-table-title); 
     text-align: center;
+    font-size: 35px;
+    font-weight: 500;
 }
 
 .au-table-title {
@@ -446,79 +456,83 @@ background-size: contain;
     padding-right: 50px;
     justify-content: center;
     color:var(--Haas-mini-table-td);
+    font-size: 500;
 }
 .Haas-mini-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
     font-size: 23px;
     justify-content: center;
+    font-size: 500;
 }
 
 .Haas-2-table{
     justify-content: center;
     width: 500px;
     align-content: center;  
+    font-size: 500;
 }
 .Haas-2-table td{
     
     padding-right: 50px;
     justify-content: center;
     color:var(--Haas-mini-table-td);
+    font-size: 500;
 }
 .Haas-2-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
     font-size: 23px;
     justify-content: center;
+    font-size: 500;
 }
 
 .Haas-3-table{
     justify-content: center;
     width: 500px;
     align-content: center;  
+    font-size: 500;
 }
 .Haas-3-table td{
     
     padding-right: 50px;
     justify-content: center;
     color:var(--Haas-mini-table-td);
+    font-size: 500;
 }
 .Haas-3-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
     font-size: 23px;
     justify-content: center;
+    font-size: 500;
 }
 
 .Haas-4-table{
     justify-content: center;
     width: 500px;
     align-content: center;  
+    font-size: 500;
 }
 .Haas-4-table td{
     
     padding-right: 50px;
     justify-content: center;
     color:var(--Haas-mini-table-td);
+    font-size: 500;
 }
 .Haas-4-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
     font-size: 23px;
     justify-content: center;
+    font-size: 500;
 }
 
 .about-us-hero-text{
-    padding: 5%;
+    padding: 3%;
     color: var(--about-us-text-h1);
 }
-
-
-/*==
-
-
-
-
 
 .about-us-h1{
     display: grid;
@@ -535,13 +549,15 @@ background-size: contain;
 
 
 
-.about-us-text{
-    display: inline-block;
-    padding: 5rem;
-    width: 40%;
-    margin-top: 5rem;
-    justify-content: center;      
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -555,7 +571,7 @@ background-size: contain;
     display: grid;
     gap: 1px;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
 }
 .card-title{
     color: var(--card-title-txt);
@@ -563,16 +579,16 @@ background-size: contain;
     background-color: var(--card-title-bg);
     display: grid;
     padding: 10px;
-    font-size: 30px;
     width: 100%;
     
 }
-.card-title, h3{
+.card-title h3{
     color: var(--card-title-txt);
+    font-size: 40px;
 }
 
 .card{
-    padding: 5px;
+    padding: 0px;
     background: none;
     max-width: 100%;
     justify-content: center;
@@ -586,19 +602,27 @@ background-size: contain;
     height: 80%;
     
 }
-.card-content-bx, h3{
+.card-content-bx{
     color: var(--services-card-txt);
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 650;
     text-align: left;
+    display: flex;
     
     
+    
+}
+.card-content-h3{
+    margin-top: auto;
+}
+.card-content-p{
+    margin-top: 0;
 }
 
 .service-card-content{
     display: grid;
     margin-bottom: 15px;
-    background-color: black;
+    background-color: var(--service-card-content);
     padding: 0px;
     width: 100%
 }
@@ -678,6 +702,8 @@ padding: 5%;
   
   }
 
+
+
 .cus-row-1, 
 .cus-row-2{
    display: flex;
@@ -708,6 +734,8 @@ padding: 5%;
 /*===Navigation Bar===*/
 .nav{
     display:flex;
+    position:sticky;
+    top:0;
     justify-content: space-between;
     align-items: Center;
     padding-inline: 3vw;
@@ -716,11 +744,16 @@ padding: 5%;
     color:var(--logo-color);
     z-index:1000;
     padding: 2%;
+    border-bottom: solid;
+    border-color: black;
+    border-width: thin;
+    
 }
 .logo h1{
-    font-weight: 500;
+    font-weight: 600;
     color: var(--logo-color);
     font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav-main-menu{
     display: flex;
@@ -761,16 +794,18 @@ padding: 5%;
     position:absolute;
     top: 32px;
     left: 0;
-    background: var(--bg-color);
+    background: var(--nav-bar-bg);
     min-width: 240px;
     border-top: 3px solid var(--nav-accnt);
     border-radius:0 0 3px 3px;
     animation: slideUp .3s;
     box-shadow: var(--shadow-1);
-    z-index:1001;
+    z-index: 1001;
+    
 }
 .dropdown-content li{
     padding: 10px;
+    
 }
 .dropdown-content li:hover{
     background: var(--nav-items-hover);
@@ -778,12 +813,24 @@ padding: 5%;
 .dropdown:hover .dropdown-content{
     display: block;
 }
+.dropdown-link{
+color: var(--nav-bar-items);
+}
 
 
 
 
 
 /*===our work===*/
+.service-cards-container{
+    width: 100%;
+    background: var(--services-section-title-bg);
+}
+.services-section{
+    background: var(--services-section);
+    width:100%;
+}
+
 .OW-img-card img{
     display: grid;
     width: 100%;
@@ -900,7 +947,7 @@ padding: 5%;
     overflow-x: auto;
     padding-bottom: 10px;
     scrollbar-width:thin;
-    scrollbar-color: black orange;
+    scrollbar-color: #2e3a4e black;
 
 }
 
@@ -1185,9 +1232,15 @@ font-size: 50px;
     margin: 0 auto;
 }
 
-.copywrite p {
+.copywrite p, a {
     margin: 0;
      color: #aaaaaa;
+     font-weight: 500; 
+}
+
+.copywrite a:hover{
+    border-bottom: underline;
+    border-color: black;
 }
 @media (max-width: 768px) {
     #footer .wrapper {

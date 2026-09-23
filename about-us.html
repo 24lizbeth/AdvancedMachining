@@ -12,17 +12,17 @@
 <body>
 
    
-         <!--Nav Bar-->
+          <!--Nav Bar-->
     <nav class="nav">
        <div class="logo">
-            <h1>Advanced Machining</h1>
+            <a href="index.html"> <h1>Advanced Machining</h1></a>
        </div>
        <ul class="nav-main-menu"> 
            <li><a href="index.html" class="nav-link">Home</a></li>
 
            <li class="dropdown">
-             <a href="index.html#services-section" class="nav-link"> <span>Services</span> </a>
-           
+             <a href="#services-section" class="nav-link"> <span>Services</span> </a>
+               
         
 
          <li class="dropdown">
@@ -40,7 +40,7 @@
             </li>
           
        </ul>
-       <button id="ctaBtn" class="cta-btn"> Contact Us</button> 
+       <button id="ctaBtn" class="cta-btn">Contact Us</button>
     </nav>
 
 
@@ -249,34 +249,102 @@
 
 
 <!-- Contact Us -->
-<div class="responsive-form">
-    <form class="contact-us" action="/ContactUs.php" method="POST">
+<div class="responsive-form" id="responsiveForm">
+    <form 
+    class="contact-us" 
+    action="https://formspree.io/f/mbglyjeb" 
+    method="POST"
+    >
     <div class="cus-row-1"> 
-        <label for="cust-name" class="cust-name">Name:</label>
-        <input type="text" class="cust-name" name="name" placeholder="Full Name">
 
-        <label for="org-name">Organization Name:</label>
-        <input type="text" class="org-name" name="org-name" placeholder="Organization Name">
+        <label for="cust-name" class="cust-name">
+            Name:
+        </label>
+
+        <input 
+        type="text" 
+        class="cust-name" 
+        name="name" 
+        placeholder="Full Name"
+        >
+
+        <label for="org-name">
+            Organization Name:
+        </label>
+
+        <input 
+        type="text" 
+        class="org-name" 
+        name="org-name" 
+        placeholder="Organization Name"
+        >
+
     </div>
+
     <br>
+
     <div class="cus-row-2"> 
-        <label for="email">Email:</label>
-        <input type="email" class="cust-email" name="email" placeholder="Email" >
+        <label for="email">
+            Email:
+        </label>
 
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" class="cust-number" name="number" placeholder="(000)-000-0000" required>
+        <input 
+            type="email" 
+            class="cust-email" 
+            name="email" 
+            placeholder="Email" 
+            required
+        >
+
+        <label for="phone">
+        Phone number:
+        </label>
+
+        <input 
+        type="tel" 
+        id="phone" 
+        class="cust-number" 
+        name="number" 
+        placeholder="(000)-000-0000" required
+        >
+
     </div>
+
     <br>
+
     <div class="cus-row-3"> 
-        <label for="email" class="description-label">Project description:</label>
-        <textarea type="text" class="description" id="project description" name="project description" ></textarea> </textarea>
+        <label 
+            for="email" 
+            class="description-label"
+        >
+            Project description:
+        </label>
+
+
+        <textarea 
+        class="description" 
+        id="project description" 
+        name="project description" 
+        required
+        ></textarea> 
     </div>
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Advanced Machining Contact Form Submission"
+    >
+
     <div>
-        <button type="button" class="cus-submit-btn"> Contact Us </button>
+        <button 
+            type="submit" 
+            class="cus-submit-btn"
+            > 
+            Contact Us 
+        </button>
     </div>
 
 </form>
-</div>
 </div>
             <!-- Footer -->
     <div class="footer-cont">

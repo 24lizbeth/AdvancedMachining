@@ -13,7 +13,7 @@
          <!--Nav Bar-->
     <nav class="nav">
        <div class="logo">
-            <h1>Advanced Machining</h1>
+            <a href="index.html"> <h1>Advanced Machining</h1></a>
        </div>
        <ul class="nav-main-menu"> 
            <li><a href="index.html" class="nav-link">Home</a></li>
@@ -147,11 +147,11 @@
               
              <div id="ServiceCardContent" class="card-content-bx">
                     
-                  <h3>Prototyping Services</h3>
-                    <p>Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<Br>
-                    All of the abilities and resources of our shop are used in our prototyping method to bring your design ideas to life. We work closely with your team, leveraging our engineering expertise to suggest improvements and improve manufacturability where we can. We deliver a quality product which can be put into production quickly and fulfills your need for rapid turnaround machining. </p>
-                    <h3>Production Services</h3>
-                    <p>Once you’re happy with the prototype, we can then scale the part into low or high volume production. Our seasoned experience in the semiconductor industry equips us with the skill to hold even micron-level geometric tolerances and preserve critical dimensions (CDs) across bulk part batches. We are also capable of developing our own custom tooling to improve manufacturability and drastically cut down turnaround time. Reducing costs, waste, and turnaround times are our priority while maintaining rigid quality control procedures.</p>   
+                   <div class="service-card-h3"><h3>Prototyping Services</h3></div>
+                    <div class="service-card-p"><p>Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<Br>
+                    All of the abilities and resources of our shop are used in our prototyping method to bring your design ideas to life. We work closely with your team, leveraging our engineering expertise to suggest improvements and improve manufacturability where we can. We deliver a quality product which can be put into production quickly and fulfills your need for rapid turnaround machining. </p></div>
+                    <div class="service-card-h3"><h3>Production Services</h3></div>
+                    <div class="service-card-p"><p>Once you’re happy with the prototype, we can then scale the part into low or high volume production. Our seasoned experience in the semiconductor industry equips us with the skill to hold even micron-level geometric tolerances and preserve critical dimensions (CDs) across bulk part batches. We are also capable of developing our own custom tooling to improve manufacturability and drastically cut down turnaround time. Reducing costs, waste, and turnaround times are our priority while maintaining rigid quality control procedures.</p></div>   
              </div>  
              </div>         
                 
@@ -161,36 +161,106 @@
 
 <!-- Contact Us -->
 <div class="responsive-form" id="responsiveForm">
-    <form class="contact-us" action="/ContactUs.php" method="POST">
+    <form 
+    class="contact-us" 
+    action="https://formspree.io/f/mbglyjeb" 
+    method="POST"
+    >
     <div class="cus-row-1"> 
-        <label for="cust-name" class="cust-name">Name:</label>
-        <input type="text" class="cust-name" name="name" placeholder="Full Name">
 
-        <label for="org-name">Organization Name:</label>
-        <input type="text" class="org-name" name="org-name" placeholder="Organization Name">
+        <label for="cust-name" class="cust-name">
+            Name:
+        </label>
+
+        <input 
+        type="text" 
+        class="cust-name" 
+        name="name" 
+        placeholder="Full Name"
+        >
+
+        <label for="org-name">
+            Organization Name:
+        </label>
+
+        <input 
+        type="text" 
+        class="org-name" 
+        name="org-name" 
+        placeholder="Organization Name"
+        >
+
     </div>
+
     <br>
+
     <div class="cus-row-2"> 
-        <label for="email">Email:</label>
-        <input type="email" class="cust-email" name="email" placeholder="Email" >
+        <label for="email">
+            Email:
+        </label>
 
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" class="cust-number" name="number" placeholder="(000)-000-0000" required>
+        <input 
+            type="email" 
+            class="cust-email" 
+            name="email" 
+            placeholder="Email" 
+            required
+        >
+
+        <label for="phone">
+        Phone number:
+        </label>
+
+        <input 
+        type="tel" 
+        id="phone" 
+        class="cust-number" 
+        name="number" 
+        placeholder="(000)-000-0000" required
+        >
+
     </div>
+
     <br>
+
     <div class="cus-row-3"> 
-        <label for="email" class="description-label">Project description:</label>
-        <textarea type="text" class="description" id="project description" name="project description" ></textarea> </textarea>
+        <label 
+            for="email" 
+            class="description-label"
+        >
+            Project description:
+        </label>
+
+
+        <textarea 
+        class="description" 
+        id="project description" 
+        name="project description" 
+        required
+        ></textarea> 
     </div>
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Advanced Machining Contact Form Submission"
+    >
+
     <div>
-        <button type="button" class="cus-submit-btn"> Contact Us </button>
+        <button 
+            type="submit" 
+            class="cus-submit-btn"
+            > 
+            Contact Us 
+        </button>
     </div>
 
 </form>
 </div>
-</div>
+
+
             <!-- Footer -->
-    <div class="footer-cont">
+<div class="footer-cont">
         <footer id="footer">
             <div class="wrapper">
                 <div class="grid-row-1">
@@ -222,7 +292,7 @@
                 </div>
             </div>
             <div class="copywrite">
-                <p>© 2026 Advanced Machining TX, LLC. All rights reserved.</p>
+                <p>© 2026 Advanced Machining TX, LLC. All rights reserved. Website by  <a href="https.cervtechnologies.com" > CervTechnologies</a></p>
             </div>
         </footer>
 </div>

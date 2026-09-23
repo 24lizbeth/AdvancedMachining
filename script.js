@@ -33,21 +33,21 @@ behavior: "smooth"
 
 prototyingBtn.addEventListener("click",function() {
     ServiceCardContent.innerHTML = `
-                    <h3>Prototyping Services</h3>
-                    <p>Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<Br>
-                    All of the abilities and resources of our shop are used in our prototyping method to bring your design ideas to life. We work closely with your team, leveraging our engineering expertise to suggest improvements and improve manufacturability where we can. We deliver a quality product which can be put into production quickly and fulfills your need for rapid turnaround machining. </p>
-                    <h3>Production Services</h3>
-                    <p>Once you’re happy with the prototype, we can then scale the part into low or high volume production. Our seasoned experience in the semiconductor industry equips us with the skill to hold even micron-level geometric tolerances and preserve critical dimensions (CDs) across bulk part batches. We are also capable of developing our own custom tooling to improve manufacturability and drastically cut down turnaround time. Reducing costs, waste, and turnaround times are our priority while maintaining rigid quality control procedures.</p>
+                    <div class="service-card-h3"><h3>Prototyping Services</h3></div>
+                    <div class="service-card-p"><p>Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<Br>
+                    All of the abilities and resources of our shop are used in our prototyping method to bring your design ideas to life. We work closely with your team, leveraging our engineering expertise to suggest improvements and improve manufacturability where we can. We deliver a quality product which can be put into production quickly and fulfills your need for rapid turnaround machining. </p></div>
+                    <div class="service-card-h3"><h3>Production Services</h3></div>
+                    <div class="service-card-p"><p>Once you’re happy with the prototype, we can then scale the part into low or high volume production. Our seasoned experience in the semiconductor industry equips us with the skill to hold even micron-level geometric tolerances and preserve critical dimensions (CDs) across bulk part batches. We are also capable of developing our own custom tooling to improve manufacturability and drastically cut down turnaround time. Reducing costs, waste, and turnaround times are our priority while maintaining rigid quality control procedures.</p></div>   
                     `;
                     });
 
 
 CADBtn.addEventListener("click",function() {
     ServiceCardContent.innerHTML = `
-                    <h3 >CAD / CAM Programming Services</h3>
-                    <p>Programming complex machining tasks for 5-axis milling  machines across the semiconductor, medical device, and aerospace & defense industries. <Br><Br>
+                    <div class="service-card-h3"> <h3 >CAD / CAM Programming Services</h3> </div>
+                    <div class="service-card-p"><p>Programming complex machining tasks for 5-axis milling  machines across the semiconductor, medical device, and aerospace & defense industries. <Br><Br>
                     We work with your manufacturing staff to deliver quality NC codes to keep your machines running and prevent downtime.<Br><Br>
-                    Our team of talented programmers and engineers have a combined 60+ years of experience.</p>
+                    Our team of talented programmers and engineers have a combined 60+ years of experience.</p> </div>
                     `;
                     }); 
                     
