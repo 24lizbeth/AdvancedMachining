@@ -1438,6 +1438,9 @@ p {
     .services-list li {
         width: 100%;
     }
+    .card-content{
+        display: grid;
+    }
 
     .service-1,
     .service-2,
