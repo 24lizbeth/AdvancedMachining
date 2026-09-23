@@ -154,7 +154,7 @@ body{
      justify-content: center;
      text-align: center;
      max-height: fit-content;
-     min-width: fit-content;
+     max-width: fit-content;
     
 }
 .hero-text-2{
@@ -167,6 +167,7 @@ body{
     max-width: 20%;   
     text-align: center; 
     max-height: fit-content;
+    max-width: fit-content;
     color: var(--hero-text);
 }
 .hero-text-3{
@@ -180,6 +181,7 @@ body{
     text-align: center;
     color: var(--hero-text);
     max-height: fit-content;
+    max-width: fit-content;
 }
 .hero-text-4{
     display: inline-block;
@@ -191,6 +193,7 @@ body{
     max-width: 20%;
     text-align: center;
     max-height: fit-content;
+    max-width: fit-content;
     color: var(--hero-text);
         
 }
