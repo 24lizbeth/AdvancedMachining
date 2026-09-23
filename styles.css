@@ -1001,7 +1001,7 @@ color: var(--nav-bar-items);
 background: var(--gallery-arrow-btn-bg);
 border-radius:10%;
 border-color:#030303;
-font-size: 50px;
+font-size: 40px;
 
 }
 
@@ -1009,7 +1009,7 @@ font-size: 50px;
 background: var(--gallery-arrow-btn-bg-hover);
 border-radius:10%;
 border-color: white;
-font-size: 50px;
+font-size: 25px;
 
 }
 
@@ -1716,8 +1716,24 @@ p {
    OUR WORK / IMAGE GRID
    ========================================= */
 
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
+* {
+    box-sizing: border-box;
+}
+.services-section,
+    .services-banner,
+    .service-card-content,
+    .services-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .main-content{
+        max-width:768px;
+    }
     .service-cards-container {
         width: 100%;
         max-width: 100%;
@@ -1731,6 +1747,7 @@ p {
         display: flex;
         flex-direction: column;
         width: 100%;
+        
         padding: 0;
         gap: 8px;
     }
@@ -1738,16 +1755,18 @@ p {
     .OW-img-card {
         width: 100%;
         max-width: 100%;
+        box-sizing: border-box;
     }
 
     .OW-img-card img {
         display: block;
-        width: 100%;
+    
         max-width: 100%;
         max-height: none;
         height: auto;
         object-fit: cover;
         padding: 2px;
+        box-sizing: border-box;
     }
 
 }
@@ -1758,13 +1777,22 @@ p {
    ========================================= */
 
 @media (max-width: 768px) {
+    .services-section{
+         display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
 
     .gallery {
         width: 100%;
         max-width: 100%;
-        max-height: none;
-        margin: 0 auto;
-        padding: 0 12px;
+        box-sizing: border-box;
     }
 
     .gallery-main {
@@ -1774,11 +1802,14 @@ p {
         gap: 8px;
         width: 100%;
         padding: 12px 4px;
+        box-sizing: border-box;
+        
     }
 
     .gallery-main-image {
         flex: 1 1 auto;
         min-width: 0;
+        box-sizing: border-box;
     }
 
     .gallery-main-image img {
@@ -1787,6 +1818,7 @@ p {
         height: auto;
         max-height: 60vh;
         object-fit: contain;
+        box-sizing: border-box;
     }
 
     .gallery-arrow {
@@ -1794,6 +1826,7 @@ p {
         height: 40px;
         min-width: 40px;
         font-size: 24px;
+        box-sizing: border-box;
     }
 
     .gallery-thumbnails {
@@ -1801,17 +1834,24 @@ p {
         max-width: 100%;
         overflow-x: auto;
         gap: 8px;
+        box-sizing: border-box;
+        
     }
 
     .thumbnail {
         width: 75px;
         height: 60px;
         min-width: 75px;
+        box-sizing: border-box;
     }
 
     .gallery-arrow-prev,
     .gallery-arrow-next {
-        font-size: 28px;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 24px;
+        box-sizing: border-box;
     }
 
 }
