@@ -7,34 +7,12 @@ const shortRunBtn = document.getElementById("shortRunBtn");
 const ServiceCardContent = document.getElementById("ServiceCardContent");
 
 
-const ctaBtn = document.getElementById("ctaBtn");
-const responsiveForm = document.getElementById("responsiveForm");
 
-
-
-ctaBtn.addEventListener("click",function() {
-
-    const isIndexPage = 
-    window.location.pathname.endsWith("index.html")||
-    window.location.pathname ==="/" ||
-    window.location.pathname ==="";
-
-    if (isIndexPage) {
-        responsiveForm.scrollIntoView({
-behavior: "smooth"
-
-        });
-
-    }else{
-        window.location.href = "index.html#responsiveForm"
-    }
-
-});
 
 prototyingBtn.addEventListener("click",function() {
     ServiceCardContent.innerHTML = `
                     <div class="service-card-h3"><h3>Prototyping Services</h3></div>
-                    <div class="service-card-p"><p>Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<Br>
+                    <div class="service-card-p"><p>Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<br>
                     All of the abilities and resources of our shop are used in our prototyping method to bring your design ideas to life. We work closely with your team, leveraging our engineering expertise to suggest improvements and improve manufacturability where we can. We deliver a quality product which can be put into production quickly and fulfills your need for rapid turnaround machining. </p></div>
                     <div class="service-card-h3"><h3>Production Services</h3></div>
                     <div class="service-card-p"><p>Once you’re happy with the prototype, we can then scale the part into low or high volume production. Our seasoned experience in the semiconductor industry equips us with the skill to hold even micron-level geometric tolerances and preserve critical dimensions (CDs) across bulk part batches. We are also capable of developing our own custom tooling to improve manufacturability and drastically cut down turnaround time. Reducing costs, waste, and turnaround times are our priority while maintaining rigid quality control procedures.</p></div>   
@@ -104,3 +82,5 @@ shortRunBtn.addEventListener("click",function() {
                     </p>
                     `;
                     });                      
+
+
