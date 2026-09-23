@@ -154,6 +154,8 @@ body{
      justify-content: center;
      text-align: center;
      max-height: fit-content;
+     min-width: fit-content;
+    
 }
 .hero-text-2{
     display: inline-block;
@@ -227,7 +229,8 @@ body{
 .hero-p{
     display: grid;
     color: var(--hero-text);
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
     
 }
 
@@ -289,6 +292,7 @@ body{
     color: var(--services-card-txt);
     padding: 20px;
     width: 100%;
+    display: grid;
    
 }
 .card{
@@ -523,11 +527,13 @@ background-size: contain;
     display: grid;
     color: var(--about-us-h1);
     align-items: center ;
+    
 }
 .about-us-p{
     display: grid;
     color: var(--about-us-h1);
     align-items: center ;
+    
 }
 
 
@@ -552,6 +558,16 @@ background-size: contain;
 
 
 /*===Service Cards===*/
+
+.service-card-content{
+    display: inline-block;
+    margin-bottom: 15px;
+    background-color: var(--service-card-content);
+    padding: 0px;
+    width: 100%
+}
+
+
 .services-card-container{
     display: grid;
     gap: 1px;
@@ -570,6 +586,8 @@ background-size: contain;
 .card-title h3{
     color: var(--card-title-txt);
     font-size: 50px;
+    font-weight: 500;
+    
 }
 
 .card{
@@ -580,7 +598,7 @@ background-size: contain;
 }
 .card-content-p{
     color: var(--services-card-txt);
-    padding: 0%;
+    padding: 2%;
     font-size: 16px;
     font-weight: 500;
     vertical-align: top;
@@ -589,8 +607,8 @@ background-size: contain;
 }
 .card-content-bx{
     color: var(--services-card-txt);
-    font-size: 35px;
-    font-weight: 650;
+    font-size: 28px;
+    font-weight: 500;
     text-align: left;
     display: flex;
     
@@ -601,18 +619,14 @@ background-size: contain;
     margin-top: auto;
     color: var(--services-card-txt);
     font-size: 35px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 
-.service-card-content{
-    display: grid;
-    margin-bottom: 15px;
-    background-color: var(--service-card-content);
-    padding: 0px;
-    width: 100%
-}
+
 .card-content{
-display: grid;
+display: flex;
 vertical-align: middle;
 
 max-width: 1700px;
@@ -635,17 +649,7 @@ max-width: 1700px;
  
 }
 /*==Our Services===*/
-.card-img {
-    
-    display: inline-block;
-    padding: 10rem;
-    background: url('Finished_Part_Orange.jpg') no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin: 5rem;
-    border-radius: 15px;
 
-}
 
 .card-content-bx{
 display: grid;
@@ -660,7 +664,7 @@ object-fit: contain;
 background: var(--service-btn);
 border-radius: 0%;
 border-color: white;
-font-size: 17px;
+font-size: 20px;
 padding: 5%;
 color: var(--service-btn-txt);
 }
@@ -670,8 +674,9 @@ color: var(--service-btn-txt);
 background: var(--service-btn);
 border-radius: 0%;
 border-color: rgb(14, 13, 13);
-font-size: 17px;
+font-size: 20px;
 padding: 5%;
+font-weight: 500;
 }
 /*==Contact Us Form===*/
  .responsive-form{
@@ -684,6 +689,7 @@ padding: 5%;
   padding: clamp(16px, 4vw, 32px);
   color: white;
   box-sizing: border-box;
+  font-size: 20px;
   
   }
 
@@ -714,6 +720,8 @@ padding: 5%;
     border-radius: 5px;
     background-color: var(--cus-btn-bg);
     border: none;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /*===Navigation Bar===*/
@@ -747,7 +755,7 @@ padding: 5%;
     padding: 10px 15px;
     margin-inline: 10px;
     transition: .3s;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--nav-bar-items);
     font-weight: 500;
 }
@@ -761,31 +769,50 @@ padding: 5%;
     font-size: 5px;
     transition: .3s; 
     font-weight: 0; 
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-.dropdown:hover .fa-chevron-down{
+.dropdown:hover > .nav-dropdown-row .fa-chevron-down {
     transform: rotate(180deg);
     color: var(--nav-items-hover);
 }
 .dropdown:hover .nav-link{
     color: var(--nav-items-hover);
 }
-
+.nav-dropdown-row{
+    position: relative;
+    z-index: 1000;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-toggle {
+    
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background:transparent;
+    color: var(--nav-bar-items);
+    border:none;
+}
 /*===Dropdown===*/
 .dropdown a{
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--nav-bar-items);
      font-weight: 500;
 }
 .nav-main-menu .dropdown-content{
     display: none;
     position:absolute;
-    top: 32px;
+    top: 100%;
     left: 0;
+
     background: var(--nav-bar-bg);
     min-width: 240px;
+
     border-top: 3px solid var(--nav-accnt);
     border-radius:0 0 3px 3px;
+
     animation: slideUp .3s;
     box-shadow: var(--shadow-1);
     z-index: 1001;
@@ -993,6 +1020,7 @@ font-size: 50px;
     color: var(--cta-text);
     background: var(--cta-bg);
     font-weight: 500;
+    font-size: 25px; 
 }
 .cta-btn:hover{
     box-shadow: var(--shadow-4);
@@ -1148,7 +1176,8 @@ font-size: 50px;
     color: var(--footer-txt);
     padding: 3rem 1rem 1rem;          /* top padding, bottom reduced */
     width: 100%;
-    margin-top: 5px;                 /* alternative to flex:1 if body is flex */
+    margin-top: 5px;  
+    font-size: 20px;               /* alternative to flex:1 if body is flex */
 }
 
 /* ===== Footer Inner Wrapper ===== */
@@ -1179,6 +1208,7 @@ font-size: 50px;
     margin-bottom: 1.2rem;
     color: var(--footer-accnt);                 /* accent color – change as you like */
     position: relative;
+    font-size: 25px; 
 }
 
 /* Optional underline effect */
@@ -1189,6 +1219,7 @@ font-size: 50px;
     height: 3px;
     background: var(--footer-accnt);
     margin-top: 6px;
+    font-size: 25px; 
 }
 
 /* ===== Links and text inside columns ===== */
@@ -1658,7 +1689,7 @@ p {
     .Haas-2-table td,
     .Haas-4-table td,
     .Haas-mini-table td {
-        font-size: 14px;
+        font-size: 23px;
         padding: 0px;
         overflow-wrap: break-word;
         

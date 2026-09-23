@@ -86,35 +86,7 @@
 
  
 
-<!--
- </ul>
 
-       <ul class="nav-main-menu"> 
-           <li><a href="index.html" class="nav-link">Home</a></li>
-
-           <li class="dropdown">
-             <a href="#services-section" class="nav-link"> <span>Services</span> </a>
-               
-        
-
-         <li class="dropdown">
-             <a href="about-us.html" class="nav-link"> <span>About Us</span> </a>
-                <ul class="dropdown-content">
-                        <li class="sub-dropdown">
-                            <a href="Our_Work.html" class="dropdown-link"><span>Our Work</span> </a>
-                                
-                        
-                            </ul>   
-                        </li>    
-                    
-                    
-                </ul>
-            </li>
-          
-       </ul>
-       <button id="ctaBtn" class="cta-btn">Contact Us</button>
-    </nav>
--->
 
     
 <!--Home Page -->
@@ -171,63 +143,85 @@
 
 <!--Services Section-->
 <section id="services-section" class="services-section">
+            <div class="service-card-content"> 
+            <div class="services-card">
+
             <div class="services-banner">
                 <h1 class ="services-header">Our Services</h1>
             </div>
+            
+            <!-- TWO-COLUMN AREA -->
+            <div class="card-content">
+                
+                    <!-- SERVICE LIST -->
+                    <div class="services-list">
 
-            <div class="services-card">
-             <div class="services-list">
-                 <ul class="services-list">
-                    <div class="service-1">
-                    <li class="sub-dropdown-btn">
-                            <button id="prototyingBtn" class="service-btn"><span>Prototyping and Production Services</span> </button>
+                        <ul class="services-list">
+                            <div class="service-1">
+                            <li class="sub-dropdown-btn">
+                                    <button id="prototyingBtn" class="service-btn"><span>Prototyping and Production Services</span> </button>
+                            </div>
+                            </li>
+                            <div class="service-2">
+                            <li class="sub-dropdown-btn">
+                                    <button id="CADBtn" class="service-btn"><span>CAD / CAM Programming Services</span></button>
+                            </div>
+                            </li>
+
+
+                            <div class="service-3">
+                            <li class="sub-dropdown-btn">
+                                    <button  id="semicondutorBtn" class= "service-btn"><span>Semiconductor Machining Services</span></button>
+                            </div>
+                            </li>
+
+                            <div class="service-4">
+                            <li class="sub-dropdown-btn">
+                                    <button id="MedicalBtn"  class="service-btn"><span>Medical Device Machining Services</span> </button>
+                            </div>
+                            </li>
+
+                            <div class="service-5">
+                            <li class="sub-dropdown-btn">
+                                    <button id="AerospaceBtn" class="service-btn"><span>Aerospace & Defense Machining services</span> </button>
+                            </div>
+                            </li>
+
+                            <div class="service-6">
+                            <li class="sub-dropdown-btn">
+                                    <button id="shortRunBtn"  class="service-btn"><span>Short Run - High Volume machining</span></button>
+                            </div>
+                            </li>
+
+                        </ul>                 
                     </div>
-                    </li>
-                    <div class="service-2">
-                    <li class="sub-dropdown-btn">
-                            <button id="CADBtn" class="service-btn"><span>CAD / CAM Programming Services</span></button>
-                    </div>
-                    </li>
+                      <!-- SERVICE CONTENT -->
+                                
+                    <div id="ServiceCardContent" class="card-content-bx">
+                            
+                        <div class="service-card-h3">
+                            <h3>Prototyping Services</h3>
+                        </div>
 
+                            <div class="service-card-p">
+                                <p>
+                                    Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<Br>
+                                    All of the abilities and resources of our shop are used in our prototyping method to bring your design ideas to life. We work closely with your team, leveraging our engineering expertise to suggest improvements and improve manufacturability where we can. We deliver a quality product which can be put into production quickly and fulfills your need for rapid turnaround machining. 
+                                </p>
+                            </div>
 
-                    <div class="service-3">
-                    <li class="sub-dropdown-btn">
-                            <button  id="semicondutorBtn" class= "service-btn"><span>Semiconductor Machining Services</span></button>
-                    </div>
-                    </li>
-
-                    <div class="service-4">
-                    <li class="sub-dropdown-btn">
-                            <button id="MedicalBtn"  class="service-btn"><span>Medical Device Machining Services</span> </button>
-                    </div>
-                    </li>
-
-                     <div class="service-5">
-                    <li class="sub-dropdown-btn">
-                            <button id="AerospaceBtn" class="service-btn"><span>Aerospace & Defense Machining services</span> </button>
-                    </div>
-                    </li>
-
-                    <div class="service-6">
-                    <li class="sub-dropdown-btn">
-                            <button id="shortRunBtn"  class="service-btn"><span>Short Run - High Volume machining</span></button>
-                    </div>
-                    </li>
-
-                 </ul>                 
-             </div>
-             <div class="service-card-content"> 
-             
-              
-             <div id="ServiceCardContent" class="card-content-bx">
-                    
-                   <div class="service-card-h3"><h3>Prototyping Services</h3></div>
-                    <div class="service-card-p"><p>Our prototyping process maximizes our shop’s capabilities and capacity to bring your design concepts to life. We work closely alongside your team, using our engineering expertise to recommend refinements and improve manufacturability as needed. Our approach supports both your fast-turnaround machining requirements and need for a high quality product that can be rapidly rolled into production.<Br>
-                    All of the abilities and resources of our shop are used in our prototyping method to bring your design ideas to life. We work closely with your team, leveraging our engineering expertise to suggest improvements and improve manufacturability where we can. We deliver a quality product which can be put into production quickly and fulfills your need for rapid turnaround machining. </p></div>
-                    <div class="service-card-h3"><h3>Production Services</h3></div>
-                    <div class="service-card-p"><p>Once you’re happy with the prototype, we can then scale the part into low or high volume production. Our seasoned experience in the semiconductor industry equips us with the skill to hold even micron-level geometric tolerances and preserve critical dimensions (CDs) across bulk part batches. We are also capable of developing our own custom tooling to improve manufacturability and drastically cut down turnaround time. Reducing costs, waste, and turnaround times are our priority while maintaining rigid quality control procedures.</p></div>   
-             </div>  
-             </div>         
+                            <div class="service-card-h3">
+                                <h3>Production Services</h3>
+                            </div>
+                            <div class="service-card-p">
+                                <p>
+                                    Once you’re happy with the prototype, we can then scale the part into low or high volume production. Our seasoned experience in the semiconductor industry equips us with the skill to hold even micron-level geometric tolerances and preserve critical dimensions (CDs) across bulk part batches. We are also capable of developing our own custom tooling to improve manufacturability and drastically cut down turnaround time. Reducing costs, waste, and turnaround times are our priority while maintaining rigid quality control procedures.
+                                </p>
+                            </div>   
+                    </div>  
+                </div>
+                </div>   
+             </div>      
                 
 </section>
 
