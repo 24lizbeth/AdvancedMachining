@@ -60,10 +60,10 @@ body {
 --nav-accnt: #121111;
 --card-title-txt: #ffffff;
 --card-title-bg: #2e3a4e;
---hero-text-bx-1: #1a1a2ee3;
---hero-text-bx-2: #505068ee;
---hero-text-bx-3: #505068ee;
---hero-text-bx-4: #1a1a2ee3;
+--hero-text-bx-1: #061838c2;
+--hero-text-bx-2: #23293598;
+--hero-text-bx-3: #23293598;
+--hero-text-bx-4: #061838c2;
 --hero-img-container: none;
 --Home-page-bg: #061838;
 --hero-span-bx1: #bacef3;
@@ -89,11 +89,11 @@ body {
 --thumbnail-hover: #ffffff;
 --gallery-main-bg: #061838;
 --gallery-arrow-btn-bg-hover: #ffffff;
---au-table-title: #ffffff;
+--au-table-title: #7f8e91;
 --service-btn: #1a1a2e;
 --service-btn-txt:  #ffffff;
 --hero-text: #ffffff;
---au-table-title: #ffffff;
+
 --service-card-content: #061838;
 --services-section: #061838;
 --services-section-title-bg: #061838;
@@ -113,6 +113,7 @@ body{
    
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 /*===Body===*/
@@ -141,6 +142,7 @@ body{
     display: inline-block;
     padding: 2%;
     background-image: url("outside_1.jpg");
+    justify-content: center;
 
 }
 .hero-text-1{
@@ -371,7 +373,11 @@ body{
     color: var(--au-table-title); 
     text-align: center;
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 600;
+    text-decoration: underline; 
+    padding-bottom: 10px;
+    padding-top: 20px;
+    
 }
 
 .au-table-title {
@@ -465,11 +471,12 @@ background-size: contain;
     justify-content: center;
     color:var(--Haas-mini-table-td);
     font-size: 500;
+    font-size: 25px;
 }
 .Haas-mini-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
-    font-size: 23px;
+    font-size: 25px;
     justify-content: center;
     font-size: 500;
 }
@@ -480,14 +487,15 @@ background-size: contain;
     padding-right: 50px;
     justify-content: center;
     color:var(--Haas-mini-table-td);
-    font-size: 500;
+    font-weight: 500;
+    font-size: 23px;
 }
 .Haas-2-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
     font-size: 23px;
     justify-content: center;
-    font-size: 500;
+    font-weight: 500;
 }
 
 
@@ -496,14 +504,15 @@ background-size: contain;
     padding-right: 50px;
     justify-content: center;
     color:var(--Haas-mini-table-td);
-    font-size: 500;
+    font-weight: 500;
+    font-size: 23px;
 }
 .Haas-3-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
-    font-size: 23px;
+    font-weight: 500;
     justify-content: center;
-    font-size: 500;
+    font-size: 23px;
 }
 
 .Haas-4-table td{
@@ -511,14 +520,16 @@ background-size: contain;
     padding-right: 50px;
     justify-content: center;
     color:var(--Haas-mini-table-td);
-    font-size: 500;
+    font-weight: 500;
+    font-size: 23px;
 }
 .Haas-4-table th{
     padding-right: 40px;
     color: var(--Haas-mini-table-th);
-    font-size: 23px;
+    
     justify-content: center;
-    font-size: 500;
+    font-weight: 500;
+    font-size: 23px;
 }
 
 .about-us-hero-text{
@@ -770,20 +781,29 @@ font-weight: 500;
 }
 .fa-chevron-down .fa-chevron-right{
     font-size: 5px;
+    
     transition: .3s; 
-    font-weight: 0; 
+    
     transition: transform 0.3s ease, color 0.3s ease;
 }
 .dropdown:hover > .nav-dropdown-row .fa-chevron-down {
     transform: rotate(180deg);
-    color: var(--nav-items-hover);
+    color: var(--nav-bar-items);
 }
 .dropdown:hover .nav-link{
-    color: var(--nav-items-hover);
+    color: var(--nav-bar-items);
 }
 .nav-dropdown-row{
     position: relative;
     z-index: 1000;
+    margin-inline: 10px;
+    
+    
+    transition: .3s;
+    font-size: 25px;
+    color: var(--nav-bar-items);
+    font-weight: 500;
+
 }
 .dropdown{
     position: relative;
@@ -1014,6 +1034,19 @@ font-size: 25px;
 }
 
 /*===Call to Action Button===*/
+.hero-cta-btn{
+    
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: thin;
+    color: var(--cta-text);
+    background: var(--cta-bg);
+    font-weight: 500;
+    font-size: 25px; 
+    margin: 15Mpx;
+    
+}
 .cta-btn{
     align-self: center;
     padding: 10px 20px;
@@ -1125,9 +1158,7 @@ font-size: 25px;
 .service-table-row{
     background: none;
     justify-content: center;
-    
-       
-   
+  
 }
 .service-table-header{
     font-size: 20px;
@@ -1137,9 +1168,15 @@ font-size: 25px;
 .service-table-data{
     font-size: 15px;
     color: var(--link-color);
+    
 }
 
-
+td.service-table-data{
+    justify-content: center;
+    
+  
+    
+}
 /*===CTA Section===*/
 .cta-section, cta-section *{
     box-sizing: border-box;
@@ -1248,7 +1285,7 @@ font-size: 25px;
 .copywrite {
     text-align: center;
     padding-top: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     color: #aaaaaa;
     max-width: 1200px;
     margin: 0 auto;
@@ -1471,7 +1508,7 @@ p {
         display: block;
         width: 100%;
         max-width: 100%;
-        padding: 20px 0;
+        padding: 20px 20px;
     }
 
     .card-content-bx h3 {
@@ -1542,7 +1579,7 @@ p {
 
     .about-us-section {
         width: 100%;
-        padding: 16px;
+        padding: 0px;
         
     }
 
@@ -1551,10 +1588,10 @@ p {
         flex-direction: column;
         width: 100%;
         max-width: 100%;
-        max-height: 400px;
+        max-height: fit-content;
         min-height: 0;
-        padding: 20px;
-        gap: 20px;
+        padding: 0px;
+        gap: 0px;
     }
 
     .au-p-table {
@@ -1562,17 +1599,32 @@ p {
         width: 100%;
         max-width: 100%;
         max-height: fit-content;
+        
 
     }
 
     .au-table-title h3 {
-        font-size: clamp(20px, 6vw, 30px);
+        font-size: clamp(25px, 6vw, 30px);
         line-height: 1;
+        
+        color: var(--au-table-title);
+    }
+     .about-us h1 {
+        
+        font-size: 20px;
+        font-weight: 500;
+        
+        justify-content: center;
+    }
+     .about-us p {
+        
+        font-size: 15px;
+        font-weight: 500;
     }
 
     .about-us-machine-img-container {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        justify-content: center;
 
         width: 100%;
         height: 200px;
@@ -1580,19 +1632,19 @@ p {
 
         gap: 12px;
 
-        overflow-x: auto;
-        overflow-y: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
 
-        padding-bottom: 10px;
-        
+        padding-bottom: 5px;
+                
     }
 
     .about-us-machine-img-container > div {
         flex: 0 2 200px;
         
         
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
         min-height: 200px;
 
         background-size: contain;
@@ -1614,6 +1666,7 @@ p {
 .about-us-img-1{
     
     background: url('Machine_1.jpeg') no-repeat;
+    
 
 }
 .about-us-img-2{
@@ -1675,29 +1728,32 @@ p {
         width: 100%;
         min-width: 0;
         max-width: 100%;
-        margin: 10px 0;
-        padding: 0px;
+        margin: 0px 0;
+        padding-inline: 30px;
         border-spacing: 0;
         display: table;
         table-layout: fixed;
     }
 
+    
+
     .Haas-3-table th,
     .Haas-2-table th,
     .Haas-4-table th,
     .Haas-mini-table th {
-        font-size: 16px;
-        padding: 0px;
-        overflow-wrap: break-word;
+        font-size: 15px;
+        padding: 2px;
+       
+        
     }
 
     .Haas-3-table td,
     .Haas-2-table td,
     .Haas-4-table td,
     .Haas-mini-table td {
-        font-size: 23px;
-        padding: 0px;
-        overflow-wrap: break-word;
+        font-size: 15px;
+        padding-left: 70px;
+        
         
     }
 
@@ -1705,10 +1761,8 @@ p {
         font-size: 17px;
     }
 
-    .service-table-data {
-        font-size: 14px;
-    }
-
+    
+  
 }
 
 
@@ -2081,12 +2135,14 @@ p {
     .logo{
         grid-area: logo;
         min-width: 0;
+        
     }
     .logo h1{
         font-size: clamp(22px, 6vw, 30px);
         line-height: 1.2;
         white-space: nowrap;
     }
+     
     /*Hamburger Button*/ 
     .hamburger{
         grid-area: hamburger;
@@ -2102,7 +2158,8 @@ p {
 
         padding:8px;
 
-        background: var(--nav-bar-items);
+        background: var(--nav-bar-bg);
+        color: var(--nav-bar-items);
 
         transition: 
         transform 025s ease,
@@ -2125,7 +2182,7 @@ p {
         display: block;
         width: 24px;
         height: 2px;
-        background: black;
+        background: var(--nav-bar-items);
         transform: transform 0.25s ease, opacity 0.25s ease;
     }
 
@@ -2190,27 +2247,31 @@ p {
         justify-content: center;
         align-items: center;
 
-        width: 46px;
-        height: 46px;
+        width: 40px;
+        height: 40px;
 
         margin-right: 6px;
 
         background: transparent;
         border: none;
 
-        color: var(--nav-bar-items);
+       
 
         cursor: pointer;
 
     }
 
     .dropdown-toggle i{
+        display: inline-block;
         transform: 0.25s ease;
     }
 
     .dropdown.open .dropdown-toggle i{
         transform: rotate(180deg);
 
+    }
+    .fa-chevron-down {
+         color: var(--nav-bar-items);
     }
 
 
@@ -2233,7 +2294,7 @@ p {
     transform: none;
 
     border-top:none;
-    border-left: 2px solid var(--nav-accnt);
+    border-left: 2px solid var(--nav-bar-items);
 
     border-radius: 0;
 
@@ -2244,12 +2305,13 @@ p {
   .dropdown-content li{
     width:100%;
     padding:0;
+    
 
   }
   .dropdown-content .dropdown-link{
     width: 100%;
     padding: 12px 28px;
-    font-size: 16px;
+    font-size: 20px;
   }
    /*-- Sub Dropdown--*/
 .nav-main-menu .sub-dropdown-content{
@@ -2273,6 +2335,7 @@ p {
  /*-- Contact Btn--*/
 
 .nav> .cta-btn{
+    display: none;
     grid-area:cta;
     justify-self: center;
 

@@ -8,7 +8,6 @@ const ServiceCardContent = document.getElementById("ServiceCardContent");
 
 
 
-
 prototyingBtn.addEventListener("click",function() {
     ServiceCardContent.innerHTML = `
                     <div class="service-card-h3"><h3>Prototyping Services</h3></div>
