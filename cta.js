@@ -1,23 +1,25 @@
-const ctaBtn = document.getElementById("ctaBtn");
+const heroBtn = document.getElementById("heroBtn");
 const responsiveForm = document.getElementById("responsiveForm");
 
 
+console.log("OurWorkScript.js is running");
 
-ctaBtn.addEventListener("click",function() {
 
-    const isIndexPage = 
-    window.location.pathname.endsWith("index.html")||
-    window.location.pathname ==="/" ||
-    window.location.pathname ==="";
 
-    if (isIndexPage) {
+
+console.log("CTA:", heroBtn);
+console.log("Form:", responsiveForm);
+if (heroBtn && responsiveForm) {
+
+    heroBtn.addEventListener("click", function() {
+
+        console.log("CTA button clicked!");
+
         responsiveForm.scrollIntoView({
-behavior: "smooth"
-
+            behavior: "smooth",
+            block: "start"
         });
 
-    }else{
-        window.location.href = "index.html#responsiveForm"
-    }
+    });
 
-});
+}

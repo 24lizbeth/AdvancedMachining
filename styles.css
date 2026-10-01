@@ -808,15 +808,19 @@ font-weight: 500;
 .dropdown{
     position: relative;
 }
+.dropdown-toggle{
+    display:none;
+}
+/*===
 .dropdown-toggle {
-    
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     background:transparent;
     color: var(--nav-bar-items);
     border:none;
-}
+}Dropdown===*/
 /*===Dropdown===*/
 .dropdown a{
     position: relative;
@@ -2243,7 +2247,7 @@ p {
     /*-- Dropdown Toggle--*/
 
      .dropdown-toggle{
-        display:flex;
+        display:none;
         justify-content: center;
         align-items: center;
 
@@ -2262,23 +2266,59 @@ p {
     }
 
     .dropdown-toggle i{
+        display:none;
         display: inline-block;
         transform: 0.25s ease;
     }
 
     .dropdown.open .dropdown-toggle i{
+        display:none;
         transform: rotate(180deg);
 
     }
-    .fa-chevron-down {
-         color: var(--nav-bar-items);
+    .fa-chevron-down .fa-chevron-up {
+         display:none;
     }
 
 
 
   /*-- Dropdown Menu--*/
 
-  /*-- Turn off desktop hover behavior--*/
+
+  .nav-main-menu .dropdown-content{
+    display: contents;
+
+    position:static;
+    width:100%;
+    min-width: 100%;
+    transform:none;
+    border:none;
+    border-radius: 0;
+     
+    box-shadow: none;
+    animation:none;
+    background: none;
+    background: transparent;
+  }
+  .dropdown-content li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .dropdown-content .dropdown-link {
+    display: block;
+
+    width: 100%;
+    padding:14px 0px;
+
+    font-size: 24px;
+    text-align: left;
+
+  }
+
+
+  /*-- Turn off desktop hover behavior
   .dropdown:hover .dropdown-content{
     display:none;
   }
@@ -2312,8 +2352,8 @@ p {
     width: 100%;
     padding: 12px 28px;
     font-size: 20px;
-  }
-   /*-- Sub Dropdown--*/
+  }--*/
+   /*-- Sub Dropdown
 .nav-main-menu .sub-dropdown-content{
     position:static;
 
@@ -2331,7 +2371,7 @@ p {
     animation: none;
 
 }
-
+--*/
  /*-- Contact Btn--*/
 
 .nav> .cta-btn{
