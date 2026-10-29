@@ -3,13 +3,13 @@ const nextBtn =document.getElementById("nextBtn");
 const prevBtn =document.getElementById("prevBtn");
 const thumbnails =document.querySelectorAll(".thumbnail");
 const images = [
-    "Finished_parts_1.jpg",
-    "Finished_parts_2.jpeg",
-    "Finished_parts_3.jpeg",
-    "Finished_parts_4.jpeg",
-    "Finished_parts_5.jpeg",
-    "Finished_parts_6.jpeg",
-    "Finished_parts_7.jpeg",
+    "finished_part1.jpg",
+    "finished_part2.jpg",
+    "finished_part3.jpg",
+    "finished_part4.jpg",
+    "finished_part5.jpg",
+    "finished_part6.jpg",
+    "finished_part7.jpg",
     "Finished_parts_8.jpeg",
     "Finished_parts_9.jpeg",
     "Finished_parts_10.jpeg",

@@ -7,6 +7,9 @@
         <title>Advanced Machining TX, LLC</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -41,38 +44,17 @@
                     <a href="#services-section" class="nav-link">
                                     Services
                     </a>
+
+                    <a href="about-us.html" class="nav-link"> 
+                                    About Us
+                    </a>
+                    <a href="Our_Work.html" class="nav-link">
+                                     Our Work
+                    </a>
                 </div>
         </li>
 
-        <li class="dropdown">
-            <div class="nav-dropdown-row">
-                <a href="about-us.html" > 
-                    About Us
-                </a>
-
-                <!--Mobile Dropdown Btn-->
-
-                <button
-                    class="dropdown-toggle"
-                    type="button"
-                    aria-label="Open About Us menu"
-                    aria-expanded="false">
-
-                    <i class="fa fa-chevron-down"></i>
-                    
-                </button>
-            </div>
-
-            <ul class="dropdown-content">
-                <li class="sub-dropdown">
-                    <div class="nav-dropdown-row">
-                        <a href="Our_Work.html" class="dropdown-link">
-                            <span>Our Work</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </li>
+        
         </ul>
             <button id="ctaBtn" class="cta-btn">
                 Contact Us
@@ -89,54 +71,140 @@
 <!--Main Content-->   
 <div class="main-content">
 <!--Hero-->    
-<section class="hero">
+<div class="hero">
     <div class="hero-img-container">
-         <div class="hero-text-1">
-            <h1 class="hero-h1">Supporting <span class="hero-h1-span-bx1">Wafer</span> Development,<Br>
-                 <span class="hero-h1-span-bx1">ATE</span> Systems, and <Br>
-                    <span class="hero-h1-span-bx1">Metrology</span> Functions.</h1>
-            <p class="hero-p">  </p>
-         </div>  
-        
-         <div class="hero-text-3">
-            <h1 class="hero-h1"><span class="hero-h1-span-bx3"> 20+ </span> <Br>
-                Years of Experience</h1>
-            <p class="hero-p"> </p>
-            </div>
-            
-        <div class="hero-text-4">
-            <h1 class="hero-h1">Advanced Tech Leaders <span class="hero-h1-span-bx4">PRECISELY</span> machined CNC parts</h1>
-            <p class="hero-p">  </p>
-            
-        </div>
-        
-        
-       
+        <div class="hero-content-1">
 
-         
-        <div class="hero-text-2">
-            <h1 class="hero-h1">We Specialize in Hitting <span class="hero-h1-span-bx2">EXACT </span>Tolerances in the Semiconductor Industry</h1>
-            <p class="hero-p">  </p>
-            
+
+                <div class="hero-text-1">
+                    <h3 >Over <span class="hero-h1-span-bx3"> 20 </span>
+                        Years of Experience</h3>
+                </div>  
+                
+                <div class="hero-text-2">
+
+                    <h3 >Advanced Tech Leaders <span class="hero-h1-span-bx4">PRECISELY</span> machined CNC parts</h3>
+                    
+                </div>
+                    
+                <div class="hero-text-3">
+
+                   <h3 >Specializing in Hitting <span class="hero-h1-span-bx2">EXACT </span>Tolerances in the Semiconductor Industry</h3>
+                   
+                </div>
+                
+                <div class="hero-text-4">
+                     
+                    <h3 >Supporting <span class="hero-h1-span-bx1">Wafer</span> Development,<span class="hero-h1-span-bx1">ATE</span> Systems, and <span class="hero-h1-span-bx1">Metrology</span> Functions. </h3>
+                                       
+                </div>
         </div>
 
-        
-        
-       
+        <div class="hero-content-2">       
+
+                <!-- Contact Us -->
+                <div class="responsive-form-hero" id="responsiveForm">
+                    <form 
+                    class="contact-us" 
+                    action="https://formspree.io/f/mbglyjeb" 
+                    method="POST"
+                    >
+                    <div class="cus-row-1"> 
+
+                        <label for="cust-name" class="cust-name">
+                            Name:
+                        </label>
+
+                        <input 
+                        type="text" 
+                        id="cus-name"
+                        class="cust-name" 
+                        name="name" 
+                        placeholder="Full Name"
+                        >
+
+                        <label for="org-name">
+                            Organization Name:
+                        </label>
+
+                        <input 
+                        type="text" 
+                        class="org-name" 
+                        name="org-name" 
+                        placeholder="Organization Name"
+                        >
+
+                    </div>
+
+                    <br>
+
+                    <div class="cus-row-2"> 
+                        <label for="email">
+                            Email:
+                        </label>
+
+                        <input 
+                            type="email" 
+                            class="cust-email" 
+                            name="email" 
+                            placeholder="Email" 
+                            required
+                        >
+
+                        <label for="phone">
+                        Phone number:
+                        </label>
+
+                        <input 
+                        type="tel" 
+                        id="phone" 
+                        class="cust-number" 
+                        name="number" 
+                        placeholder="(000)-000-0000" required
+                        >
+
+                    </div>
+
+                    <br>
+
+                    <div class="cus-row-3"> 
+                        <label for="email" class="description-label">
+                            Project description:
+                        </label>
+
+
+                        <textarea 
+                            class="description" 
+                            id="project-description" 
+                            name="project description" 
+                            required
+                        ></textarea> 
+                    </div>
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Advanced Machining Contact Form Submission"
+                    >
+
+                    <div>
+                        <button 
+                            type="submit" 
+                            class="cus-submit-btn"
+                            > 
+                            Contact Us 
+                        </button>
+                    </div>
+
+                </form>
+                </div>
+        </div>
+    </div>
         
 
-       
 
-        
-      
-        
-              
-        </div>
-        <button id="heroBtn" class="hero-cta-btn">
-                Contact Us &rarr;
-            </button>
-        </div>
-</section>
+</div>
+    
 
 
 <!--Services Section-->
@@ -223,8 +291,16 @@
                 
 </section>
 
+<div class="body-tagline">
+    
+    <div class="body-tagline-text">
+        <h3> CHECK OUT OUR WORK</h3>
+    </div>
+  
+</div>
 
-
+<div class="body-cta-container">
+<div class="body-cta-left">
 <!-- Contact Us -->
 <div class="responsive-form" id="responsiveForm">
     <form 
@@ -321,8 +397,14 @@
 
 </form>
 </div>
+</div>
+<div class="body-cta-right">
+    <h3>CHECK OUT OUR STORY</h3>
+</div>
+</div>
 
 
+</div>
             <!-- Footer -->
 <div class="footer-cont">
         <footer id="footer">
@@ -359,6 +441,7 @@
                 <p>© 2026 Advanced Machining TX, LLC. All rights reserved. Website by  <a href="https://cervtechnologies.com" > CervTechnologies</a></p>
             </div>
         </footer>
+        
 </div>
 <script src="script.js"></script>
 <script src="mobile.js"></script>
