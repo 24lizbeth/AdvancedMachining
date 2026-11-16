@@ -1,6 +1,6 @@
 const heroBtn = document.getElementById("heroBtn");
 const responsiveForm = document.getElementById("responsiveForm");
-
+const ctaBtn = document.getElementById("ctaBtn");
 
 console.log("OurWorkScript.js is running");
 
@@ -23,3 +23,12 @@ if (heroBtn && responsiveForm) {
     });
 
 }
+
+ctaBtn.addEventListener("click", function() {
+    window.location.href = "index.html#bodyCtaContainer";
+
+
+    
+});
+
+

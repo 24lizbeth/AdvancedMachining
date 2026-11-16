@@ -907,14 +907,7 @@ font-size: 50px;
     font-size: 15px;
     font-weight: 500;
 }
-.responsive-form-ow textarea::placeholder,
-.responsive-form-about-us textarea::placeholder,
-.responsive-form textarea::placeholder{
- color: var(--body-cta-input-color);
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-}
+
 .responsive-form-ow textarea,
 .responsive-form-about-us textarea,
 .responsive-form textarea{
@@ -924,6 +917,14 @@ font-size: 50px;
     
     font-weight: 800;
 }
+.responsive-form-ow textarea::placeholder,
+.responsive-form-about-us textarea::placeholder,
+.responsive-form textarea::placeholder{
+    
+    color: transparent;
+    opacity: 0;
+}
+
  .responsive-form-hero{
   
   width: min(90%, 400px);
@@ -1190,7 +1191,7 @@ color: var(--nav-bar-items);
     overflow-x: auto;
     padding-bottom: 10px;
     scrollbar-width:thin;
-    scrollbar-color: #2e3a4e black;
+    scrollbar-color: var(--about-us-bg) var(--accnt);
     background: var(--about-us-bg);
 
 }
@@ -1224,18 +1225,21 @@ color: var(--nav-bar-items);
 }
 
 .gallery-arrow-prev, .gallery-arrow-next{
-background: var(--gallery-arrow-btn-bg);
+background: var(--about-us-bg);
 border-radius:10%;
-border-color:#030303;
+border-color:none;
 font-size: 40px;
-
+border:none;
+color: var(--accnt);
 }
 
 .gallery-arrow-prev:hover, .gallery-arrow-next:hover{
-background: var(--gallery-arrow-btn-bg-hover);
+background: var(--about-us-bg);
 border-radius:10%;
-border-color: white;
-font-size: 25px;
+border-color:none;
+font-size: 40px;
+border:none;
+color: var(--body-cta-input-color);
 
 }
 
@@ -1447,7 +1451,7 @@ td.service-table-data{
 .grid-row-2,
 .grid-row-3 {
     flex: 1 1 200px;                /* grow, shrink, base width */
-    min-width: 180px;
+    min-width: 350px;
 }
 
 /* Headings in each column */
@@ -1487,13 +1491,15 @@ td.service-table-data{
     margin-bottom: 0.8rem;
     line-height: 1.6;
     color: var(--footer-txt);
+    display: flex;
 }
 
 .span-3 a {
     color: #dddddd;
     text-decoration: none;
     transition: color 0.2s ease, padding-left 0.2s ease;
-    display: inline-block;
+    display: inline-flex;
+    margin-inline: 5px;
 }
 
 .span-3 a:hover {
@@ -2947,7 +2953,17 @@ td.service-table-data{
     }
 
 }
-
+@media screen and (max-width: 768px) {
+    .responsive-form-ow textarea::placeholder,
+    .responsive-form-about-us textarea::placeholder,
+    .responsive-form textarea::placeholder {
+        color: var(--body-cta-input-color);
+        opacity: 1;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
 
 /* =====================================================
    SMALL PHONES
@@ -2984,6 +3000,7 @@ td.service-table-data{
     .responsive-form-ow {
         padding: 18px 13px;
     }
+    
 
     .services-section {
         padding: 24px 12px;
